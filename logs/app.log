@@ -13538,3 +13538,5 @@ Traceback (most recent call last):
   File "C:\Users\Sanjana\Desktop\universal-api-integrator\test_error_handling.py", line 5, in bad_fn
     raise InvalidResponseError("API returned empty JSON")
 src.errors.exceptions.InvalidResponseError: API returned empty JSON
+2025-11-19 20:33:56,395 | INFO | module=http_client | request=12345 | user=system | [REQUEST] GET https://api.github.com/repos/octocat/Hello-World attempt=1
+2025-11-19 20:33:57,146 | INFO | module=http_client | request=12345 | user=system | [RESPONSE] success url=https://api.github.com/repos/octocat/Hello-World
