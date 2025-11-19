@@ -13512,3 +13512,8 @@
 [93m2025-11-19 16:21:45,899  WARNING - Warning![0m
 [91m2025-11-19 16:21:45,900  ERROR - Error occurred[0m
 [95m2025-11-19 16:21:45,900  CRITICAL - Critical failure[0m
+2025-11-19 16:26:57,623 | DEBUG | module=test_levels | request=12345 | user=system | Debug message
+2025-11-19 16:26:57,623 | INFO | module=test_levels | request=12345 | user=system | Info message
+2025-11-19 16:26:57,623 | WARNING | module=test_levels | request=12345 | user=system | Warning!
+2025-11-19 16:26:57,623 | ERROR | module=test_levels | request=12345 | user=system | Error occurred
+2025-11-19 16:26:57,624 | CRITICAL | module=test_levels | request=12345 | user=system | Critical failure

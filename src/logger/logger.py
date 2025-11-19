@@ -40,13 +40,29 @@ class ColorFormatter(logging.Formatter):
             message = super().format(record)
             return f"{color}{message}{self.RESET}"
     
+
+class RequestContextFilter(logging.Filter):
+    def __init__(self, request_id=None, user=None):
+        super().__init__()
+        self.request_id = request_id
+        self.user = user
+
+    def filter(self, record):
+        record.request_id = self.request_id or "N/A"
+        record.user = self.user or "N/A"
+        return True
+
+
 def get_logger(name: str):
     # ensure logs directory exists
     os.makedirs("logs", exist_ok=True)
+    
+    context_filter = RequestContextFilter(request_id="12345", user="system")
+    
 
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
-
+    logger.addFilter(context_filter)
     if not logger.handlers:
         # File handler
         file_handler = RotatingFileHandler(
@@ -62,10 +78,10 @@ def get_logger(name: str):
 
         # Log format
         formatter = logging.Formatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            "%(asctime)s | %(levelname)s | module=%(name)s | request=%(request_id)s | user=%(user)s | %(message)s"
         )
         color_formatter = ColorFormatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+            "%(asctime)s | %(levelname)s | module=%(name)s | request=%(request_id)s | user=%(user)s | %(message)s"
         )
         file_handler.setFormatter(formatter)
         stream_handler.setFormatter(color_formatter)
