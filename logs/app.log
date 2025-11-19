@@ -13429,3 +13429,56 @@
 2025-11-19 14:01:09,015 - stress - INFO - Log line 49997
 2025-11-19 14:01:09,015 - stress - INFO - Log line 49998
 2025-11-19 14:01:09,015 - stress - INFO - Log line 49999
+2025-11-19 14:26:06,823 - json_parser - ERROR - File not found: input\sample.json
+2025-11-19 14:26:34,049 - json_parser - INFO - Loaded JSON: src\parsers\input\sample.json
+2025-11-19 14:37:54,014 - yaml_parser - ERROR - YAML file not found: input\pipeline.yaml
+2025-11-19 14:38:10,006 - yaml_parser - INFO - Loaded YAML: src\parsers\input\pipeline.yaml
+2025-11-19 14:38:58,775 - csv_parser - ERROR - CSV file not found: input\users.csv
+2025-11-19 14:39:13,685 - csv_parser - INFO - Loaded CSV with 2 rows
+2025-11-19 14:44:37,031 - yaml_parser - ERROR - YAML file not found: input\pipeline.yaml
+2025-11-19 14:44:37,031 - json_parser - ERROR - File not found: input\sample.json
+2025-11-19 14:44:37,032 - csv_parser - ERROR - CSV file not found: input\users.csv
+2025-11-19 14:44:37,032 - etl - INFO - ETL pipeline executed successfully
+2025-11-19 14:45:37,999 - yaml_parser - INFO - Loaded YAML: src\parsers\input\pipeline.yaml
+2025-11-19 14:45:37,999 - json_parser - INFO - Loaded JSON: src\parsers\input\sample.json
+2025-11-19 14:45:38,000 - csv_parser - INFO - Loaded CSV with 2 rows
+2025-11-19 14:45:38,000 - etl - INFO - ETL pipeline executed successfully
+2025-11-19 15:03:23,321 - text_cleaner - INFO - Cleaning text
+2025-11-19 15:03:23,322 - text_cleaner - DEBUG - Removing accents
+2025-11-19 15:03:23,323 - text_cleaner - DEBUG - Lowercasing text
+2025-11-19 15:03:23,323 - text_cleaner - DEBUG - Removing punctuation
+2025-11-19 15:03:23,324 - text_cleaner - DEBUG - Normalizing whitespace
+2025-11-19 15:08:42,667 - text_cleaner - INFO - Extracting emails
+2025-11-19 15:08:42,667 - text_cleaner - INFO - Extracting phone numbers
+2025-11-19 15:08:42,668 - text_cleaner - INFO - Extracting dates
+2025-11-19 15:09:54,091 - text_cleaner - INFO - Extracting emails
+2025-11-19 15:09:54,092 - text_cleaner - INFO - Extracting phone numbers
+2025-11-19 15:09:54,092 - text_cleaner - INFO - Extracting dates
+2025-11-19 15:09:54,093 - text_cleaner - INFO - Extracting URLs
+2025-11-19 15:09:54,093 - text_cleaner - INFO - Extracting hashtags
+2025-11-19 15:09:54,093 - text_cleaner - INFO - Extracting mentions
+2025-11-19 15:10:31,471 - text_cleaner - INFO - Extracting emails
+2025-11-19 15:10:31,472 - text_cleaner - INFO - Extracting phone numbers
+2025-11-19 15:10:31,472 - text_cleaner - INFO - Extracting dates
+2025-11-19 15:10:31,473 - text_cleaner - INFO - Extracting URLs
+2025-11-19 15:10:31,473 - text_cleaner - INFO - Extracting hashtags
+2025-11-19 15:10:31,473 - text_cleaner - INFO - Extracting mentions
+2025-11-19 15:10:31,474 - text_cleaner - INFO - Extracting numbers
+2025-11-19 15:12:56,684 - yaml_parser - INFO - Loaded YAML: src\parsers\input\pipeline.yaml
+2025-11-19 15:12:56,684 - json_parser - INFO - Loaded JSON: src\parsers\input\sample.json
+2025-11-19 15:12:56,684 - csv_parser - INFO - Loaded CSV with 2 rows
+2025-11-19 15:12:56,685 - text_cleaner - INFO - Cleaning text
+2025-11-19 15:12:56,685 - text_cleaner - DEBUG - Removing accents
+2025-11-19 15:12:56,685 - text_cleaner - DEBUG - Lowercasing text
+2025-11-19 15:12:56,685 - text_cleaner - DEBUG - Removing punctuation
+2025-11-19 15:12:56,685 - text_cleaner - DEBUG - Normalizing whitespace
+2025-11-19 15:12:56,685 - etl - INFO - ETL pipeline executed with text cleaning
+2025-11-19 15:16:20,502 - yaml_parser - INFO - Loaded YAML: src\parsers\input\pipeline.yaml
+2025-11-19 15:16:20,503 - json_parser - INFO - Loaded JSON: src\parsers\input\sample.json
+2025-11-19 15:16:20,503 - csv_parser - INFO - Loaded CSV with 2 rows
+2025-11-19 15:16:20,504 - text_cleaner - INFO - Cleaning text
+2025-11-19 15:16:20,504 - text_cleaner - DEBUG - Removing accents
+2025-11-19 15:16:20,504 - text_cleaner - DEBUG - Lowercasing text
+2025-11-19 15:16:20,504 - text_cleaner - DEBUG - Removing punctuation
+2025-11-19 15:16:20,504 - text_cleaner - DEBUG - Normalizing whitespace
+2025-11-19 15:16:20,504 - etl - INFO - ETL pipeline executed with text cleaning

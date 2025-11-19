@@ -1,0 +1,6 @@
+version: 1
+pipeline:
+  - load_json
+  - clean_data
+  - extract_fields
+  
