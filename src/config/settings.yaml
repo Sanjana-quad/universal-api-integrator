@@ -1,0 +1,20 @@
+environment: "development"
+
+apis:
+  weather:
+    base_url: "https://api.openweathermap.org/data/2.5"
+    endpoints:
+      current: "/weather"
+      forecast: "/forecast"
+    timeout: 5
+    retries: 3
+
+  github:
+    base_url: "https://api.github.com"
+    timeout: 5
+    retries: 2
+
+  currency:
+    base_url: "https://api.exchangerate-api.com/v4"
+    timeout: 5
+    retries: 2

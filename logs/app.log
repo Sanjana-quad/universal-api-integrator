@@ -13517,3 +13517,24 @@
 2025-11-19 16:26:57,623 | WARNING | module=test_levels | request=12345 | user=system | Warning!
 2025-11-19 16:26:57,623 | ERROR | module=test_levels | request=12345 | user=system | Error occurred
 2025-11-19 16:26:57,624 | CRITICAL | module=test_levels | request=12345 | user=system | Critical failure
+2025-11-19 17:20:01,655 | ERROR | module=error_handler | request=12345 | user=system | Error occurred | InvalidResponseError | API returned empty JSON | context=Function=bad_fn
+Traceback (most recent call last):
+  File "C:\Users\Sanjana\Desktop\universal-api-integrator\src\errors\handlers.py", line 11, in safe_execute
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjana\Desktop\universal-api-integrator\test_error_handling.py", line 5, in bad_fn
+    raise InvalidResponseError("API returned empty JSON")
+src.errors.exceptions.InvalidResponseError: API returned empty JSON
+2025-11-19 17:25:39,621 | ERROR | module=error_handler | request=12345 | user=system | Error occurred | InvalidResponseError | API returned empty JSON | context=Function=bad_fn
+Traceback (most recent call last):
+  File "C:\Users\Sanjana\Desktop\universal-api-integrator\src\errors\handlers.py", line 11, in safe_execute
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjana\Desktop\universal-api-integrator\test_error_handling.py", line 5, in bad_fn
+    raise InvalidResponseError("API returned empty JSON")
+src.errors.exceptions.InvalidResponseError: API returned empty JSON
+2025-11-19 17:27:00,138 | ERROR | module=error_handler | request=12345 | user=system | [INVALID_RESPONSE] | InvalidResponseError | API returned empty JSON | context=Function=bad_fn
+Traceback (most recent call last):
+  File "C:\Users\Sanjana\Desktop\universal-api-integrator\src\errors\handlers.py", line 38, in safe_execute
+    return func(*args, **kwargs)
+  File "C:\Users\Sanjana\Desktop\universal-api-integrator\test_error_handling.py", line 5, in bad_fn
+    raise InvalidResponseError("API returned empty JSON")
+src.errors.exceptions.InvalidResponseError: API returned empty JSON
